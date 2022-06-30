@@ -43,8 +43,8 @@ export class DashboardComponent implements OnInit {
 
 }
 
-function processData(accountService: UsersService) {
-  const users: User[] = accountService.getAccounts();
+function processData(usersService: UsersService) {
+  const users: User[] = usersService.getAccounts();
   const userListDiv = document.getElementById('userList');
   for (const user of users) {
     const userDiv = document.createElement('div');
